@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 3</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 5 elementos -->
+    <h1 id="titulo">Título Original</h1>
+    <p>Este é um parágrafo.</p>
+    <div>Uma div qualquer</div>
+    <h2>Subtítulo</h2>
+
+    <input type="text" id="campo" placeholder="Digite um novo título">
+    <button onclick="mudar()">Alterar</button>
+
+    <script>
+        function mudar() {
+            let texto = document.getElementById("campo").value;
+            document.getElementById("titulo").innerText = texto;
+        }
+    </script>
+
+</body>
+</html>
